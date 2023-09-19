@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardCornerRadius="30sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/nointernet"
+        app:tint="@color/black"
+        ></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="20sp"
+        android:text="No internet please check internet connection and try again"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        ></TextView>
+
+    <Button
+        android:id="@+id/tryagainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/screenList"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="try again"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+        ></Button>
+
+    </LinearLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            ></ProgressBar>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
